@@ -2,14 +2,10 @@
 import TextField from '@mui/material/TextField';
 import css from './Filter.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-// import { getFilterValue } from 'redux/actions';
-// import { getFilter } from 'redux/selectors';
-// import { getFilterValue } from 'redux/filtersSlice';
 
-// import { getFilterValue } from 'redux/actions';
 import { getFilter} from 'redux/filtersSlice';
 import { setFilter } from 'redux/filtersSlice';
-// import { getFilterValue } from 'redux/actions';
+
 
 function Filter(
   // { filterValue, onChange }
@@ -21,7 +17,7 @@ function Filter(
      
       const filterValue = e.target.value;
       dispatch(setFilter(filterValue));
-      // console.log('getFilterValue', getFilterValue)
+    
     };
     // получаем 
     const filter = useSelector(getFilter);
@@ -48,7 +44,3 @@ function Filter(
 export default Filter;
 
 
-// Filter.propTypes = {
-//   filterValue: PropTypes.string.isRequired,
-//   onChange: PropTypes.func.isRequired,
-// };

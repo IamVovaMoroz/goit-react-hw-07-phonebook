@@ -16,6 +16,6 @@ state.filterValue = action.payload;
 
 export const getFilter = state => state.filter.filterValue;
 export const { setFilter } = filterSlice.actions;
-console.log('setFilter', setFilter)
+
 export const filterReducer = filterSlice.reducer;
 

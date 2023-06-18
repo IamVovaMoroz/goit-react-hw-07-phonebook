@@ -14,10 +14,10 @@ function ContactsList(
   {
     //  используем хук useSelector для получения состояния contacts.  getContacts возвращает список контактов из состояния. 
     const contacts = useSelector(getContacts);
-    console.log('contacts filter', contacts)
+
     // хук useSelector для получения значения состояния filter.
     const filter = useSelector(getFilter);
-    console.log('filter', filter)
+   
 // фильтр приводим к нижнему реестру и убираем пробелы, для сравнения со значения в контактах
 // const normalizedFilter = filter.toLowerCase().trim();
 const normalizedFilter = filter ? filter.toLowerCase().trim() : '';
