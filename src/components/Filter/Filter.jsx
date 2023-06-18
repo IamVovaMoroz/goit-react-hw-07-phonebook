@@ -7,7 +7,8 @@ import { useDispatch, useSelector } from 'react-redux';
 // import { getFilterValue } from 'redux/filtersSlice';
 
 // import { getFilterValue } from 'redux/actions';
-import { getFilter, setFilter } from 'redux/filtersSlice';
+import { getFilter} from 'redux/filtersSlice';
+import { setFilter } from 'redux/filtersSlice';
 // import { getFilterValue } from 'redux/actions';
 
 function Filter(
@@ -18,7 +19,7 @@ function Filter(
       // получаем значение с инпута , что вводит пользователь и передаем в action getFilterValue
      
      
-      const filterValue = e.currentTarget.value;
+      const filterValue = e.target.value;
       dispatch(setFilter(filterValue));
       // console.log('getFilterValue', getFilterValue)
     };
