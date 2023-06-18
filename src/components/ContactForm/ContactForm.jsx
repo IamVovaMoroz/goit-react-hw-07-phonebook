@@ -1,12 +1,15 @@
 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector  } from 'react-redux';
 
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 // import { addContacts } from 'redux/actions';
 import css from './ContactForm.module.css';
-import { addContacts } from 'redux/contactsSlice';
-import { nanoid } from 'nanoid';
+// import { addContacts } from 'redux/contactsSlice';
+
+import { addContacts } from 'redux/fetchAPI';
+import { getContacts } from 'redux/contactSelector';
+
 
 export default function ContactForm() {
   const dispatch = useDispatch();
@@ -20,8 +23,8 @@ export default function ContactForm() {
     // получаем number из формы при submit
   const number = e.target.number.value;
   // console.log('number', number)
-  const id = nanoid()
-  dispatch(addContacts({ id, name, number }));
+  // const id = nanoid()
+  dispatch(addContacts({  name, number }));
   form.reset();
   };
   

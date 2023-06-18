@@ -3,7 +3,8 @@ import { nanoid } from 'nanoid';
 import Contact from 'components/Contact/Contact';
 import { useSelector } from 'react-redux';
 
-import {  getContacts } from 'redux/contactsSlice';
+import { getContacts } from 'redux/contactSelector';
+
 import { getFilter } from 'redux/filtersSlice';
 
 function ContactsList(
