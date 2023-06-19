@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 
 export default function App() {
-// для загрузки всех контактов с базы
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchContacts());
