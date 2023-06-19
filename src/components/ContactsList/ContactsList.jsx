@@ -8,7 +8,7 @@ import { getContacts } from 'redux/contactSelector';
 import { getFilter } from 'redux/filtersSlice';
 
 function ContactsList(
-  // { list, deleteContact }
+ 
   ) 
  
   {
@@ -49,15 +49,3 @@ const normalizedFilter = filter ? filter.toLowerCase().trim() : '';
 
 
 export default ContactsList;
-
-
-// ContactsList.propTypes = {
-//   list: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       name: PropTypes.string.isRequired,
-//       number: PropTypes.string.isRequired,
-//     })
-//   ),
-//   deleteContact: PropTypes.func.isRequired,
-// };
