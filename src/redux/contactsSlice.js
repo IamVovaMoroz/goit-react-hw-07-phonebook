@@ -1,4 +1,3 @@
-
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchContacts, addContacts, deleteContact } from './fetchAPI';
 
